@@ -53,7 +53,7 @@ int main(int argc, char *argv[]) {
 		cout<<lista[i]->toString()<<endl;
 	
 	//ordenamos nuestras actividades por el criterio del tiempo final
-	//recuerde que para que una lista pueda ordenar, necesita una función que permita comparar
+	//recuerde que para que una lista pueda ordenar, necesita una funciÃ³n que permita comparar
 	//dos actividades con un criterio.
 	sort(lista.begin(), lista.end(), compararActividades);
 	
@@ -70,9 +70,8 @@ int main(int argc, char *argv[]) {
 	
 	for ( j = 1; j < n; j++)
 	{
-		// If this activity has start time greater than or 
-		// equal to the finish time of previously selected 
-		// activity, then select it 
+		//si la actividad en el indice j en cuanto a su tiempo de inicio 
+		//es mayor al tiempo de fin de la anterio actividad, entonces lo imprimimos
 		if (lista[j]->tiempoInicio >= lista[i]->tiempoFin)
 		{
 			cout<<lista.at(j)->toString()<<endl;
