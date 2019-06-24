@@ -90,9 +90,8 @@ namespace EjemploGreedy
             
             for ( j = 1; j < n; j++)
             {
-                // If this activity has start time greater than or 
-                // equal to the finish time of previously selected 
-                // activity, then select it 
+                //si la actividad en el indice j en cuanto a su tiempo de inicio 
+		        //es mayor al tiempo de fin de la anterio actividad, entonces lo imprimimos
                 if (listaActividades[j].tiempoInicio >= listaActividades[i].tiempoFin)
                 {
                     Console.Write( ",  "+listaActividades[j].nombre);
